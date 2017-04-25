@@ -1,0 +1,149 @@
+@charset "utf-8";
+html,
+body {
+  width: 100%;
+  height: 100%;
+  // background: url(../images/bg.png) no-repeat center / cover;
+  background-color: #eee;
+  overflow: hidden;
+}
+html div.snow,
+body div.snow {
+  position: absolute;
+}
+.bg {
+  height: 100%;
+  padding: 100px  50px;
+  position: relative;
+}
+.bg .logo {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 200px;
+  height: 50px;
+  background: url(../images/logo.gif) no-repeat center / cover;
+}
+.bg .logo a{
+  display:block;
+  width: 200px;
+  height: 50px;
+}
+.bg .top-title {
+  position: absolute;
+  top: 20px;
+  right: 100px;
+  background: url(../images/title.png) no-repeat center / cover;
+  width: 300px;
+  height: 53px;
+}
+
+
+.bg .Aicon ul {
+  margin-top: 20px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.bg .Aicon li {
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  line-height: 150px;
+  font-size: 60px;
+  box-shadow: 2px 2px 20px 2px #ccc;
+  border-radius: 10px;
+  transition: all .5s;
+}
+.bg .Aicon li:hover {
+  font-size: 100px;
+}
+.bg .Aicon li:nth-of-type(1) {
+  align-self: flex-start;
+}
+.bg .Aicon li:nth-of-type(2) {
+  align-self: center;
+  margin-top: 150px;
+}
+.bg .Aicon li:nth-of-type(3) {
+  align-self: flex-start;
+}
+.bg .Aicon li:nth-of-type(4) {
+  align-self: center;
+  margin-top: 150px;
+}
+.bg .Aicon li:nth-of-type(5) {
+  align-self: flex-start;
+}
+.bg .Aicon li:nth-of-type(6) {
+  margin: 0 auto;
+}
+
+.bg .login {
+  float: right;
+  margin: 20px auto 0;
+  padding: 30px 15px;
+  margin-right: 100px;
+  height: 400px;
+  width: 250px;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 2px 2px 20px 2px #ccc;
+}
+
+
+.bg .login h2 {
+  text-align: center;
+}
+.bg .login form .form-group{
+  margin: 0;
+}
+.bg .login form .form-group .info{
+  display:block;
+  text-align:center;
+  padding:3px 10px;
+  color: red;
+}
+
+
+
+
+@media screen and (min-width:1200px){
+    .bg .Aicon {
+      width: 800px;
+      height: 500px;
+      overflow: hidden;
+    }
+}
+
+@media screen and (min-width:375px) and (max-width:1199px){
+    .bg .Aicon {
+      display: none;
+    }
+    .bg .logo {
+    display: none;
+  }
+    .bg .top-title {
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    margin-left: -100px;
+    background: url(../images/title.png) no-repeat center / cover;
+    background-size: 200px 40px;
+    width: 200px;
+    height: 40px;
+    }
+    .bg .login {
+    position:absolute;
+    top: 100px;
+    left: 50%;
+    margin-left: -125px;
+    padding: 30px 15px;
+    height: 400px;
+    width: 250px;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition:all .5s;
+    box-shadow: 2px 2px 20px 2px #ccc;
+  }
+}

@@ -1,0 +1,284 @@
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1 ,user-scalable=0">
+    <title>仓库首页</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-table.min.css">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+     <!-- <link href="Font-Awesome-3.2.1/css/font-awesome.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" type="text/css" href="css/my-table.css">
+
+</head>
+<body>
+<!-- this is the header -->
+  <nav class="navbar  navbar-fixed-top">
+      <div class="container">
+              <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+              <a class="navbar-brand" href="http://www.hue.edu.cn/static/" target="_blank"><img src="images/logo.gif" style="height:40px ; width:170px; " alt=""></a>
+          </div>
+
+          <ul class="nav navbar-nav nav-style">
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-envelope"></i> <b class="caret"></b></a>
+                <ul class="dropdown-menu message-dropdown">
+                    <li class="message-preview">
+                        <a href="#">
+                            <div class="media">
+                                <span class="pull-left">
+                                    <img class="media-object" src="http://placehold.it/50x50" alt="">
+                                </span>
+                                <div class="media-body">
+                                    <h5 class="media-heading"><strong>Admin</strong>
+                                    </h5>
+                                    <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur...</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="message-preview">
+                        <a href="#">
+                            <div class="media">
+                                <span class="pull-left">
+                                    <img class="media-object" src="http://placehold.it/50x50" alt="">
+                                </span>
+                                <div class="media-body">
+                                    <h5 class="media-heading"><strong>super</strong>
+                                    </h5>
+                                    <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur...</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="message-preview">
+                        <a href="#">
+                            <div class="media">
+                                <span class="pull-left">
+                                    <img class="media-object" src="http://placehold.it/50x50" alt="">
+                                </span>
+                                <div class="media-body">
+                                    <h5 class="media-heading"><strong>user</strong>
+                                    </h5>
+                                    <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur...</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="message-footer">
+                        <a href="#">Read All New Messages</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a  id="infoNum" href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bell"></i> <b class="caret"></b></a>
+                <ul class="dropdown-menu alert-dropdown">
+                   <!--  <li>
+                        <a href="#">Alert Name <span class="label label-danger">Alert Badge</span></a>
+                    </li>
+                    <li class="divider"></li>
+                    <li>
+                        <a href="#">View All</a>
+                    </li> -->
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a  href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> <span id="admin">Admin</span> <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a href="#"><i class="fa fa-fw fa-user"></i> Profile</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-fw fa-envelope"></i> Inbox</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-fw fa-gear"></i> Settings</a>
+                    </li>
+                    <li class="divider"></li>
+                    <li>
+                        <a href="#" id="logout"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
+                    </li>
+                </ul>
+            </li>
+          </ul>
+
+      </div>
+  </nav>
+
+  <div class="content clearfix">
+          <!-- left  menues -->
+          <div class="left navbar-ex1-collapse">
+              <div id='munes'>
+                    <span>菜单管理</span><i class="fa fa-fw fa-chevron-left"></i>
+
+              </div>
+
+                <ul class="nav navbar-nav side-nav">
+
+                    <!-- 可以加class="active" -->
+                    <li>
+                        <a href="#" id="all_product"><i class="fa fa-fw fa-desktop"></i> <span>全部商品 </span></a>
+
+                    </li>
+                    <li>
+                        <a href="#" id="search_box"><i class="glyphicon glyphicon-search"></i><span>搜索商品 </span></a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" id="control" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-edit"></i> <span>商品操作<i class="fa fa-fw fa-caret-down"></i></span> </a>
+                        <ul id="demo" class="collapse">
+                            <li>
+                                <a href="#" data-toggle="modal" data-target="#exampleModal"
+                                data-whatever="商品入库"><i class="glyphicon glyphicon-plus"></i><span>添加商品</span></a>
+                            </li>
+                            <li>
+                                <a href="#" id="delete_box"><i class="glyphicon glyphicon-pencil"></i><span>商品修改/删除</span></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" id="history"><i class="glyphicon glyphicon-time"></i><span>历史记录 </span></a>
+                    </li>
+                     <li>
+                        <a href="#" id="userControl" data-toggle="modal" data-target="#pwdAdmin"><i class="glyphicon glyphicon-user"></i><span>用户管理</span></a>
+                    </li>
+                    <li>
+                        <a href="#" id="historyDelete" data-toggle="modal" data-target="#pwdAdmin"><i class="glyphicon glyphicon-trash"></i><span>删除历史</span></a>
+                    </li>
+                </ul>
+
+          </div>
+          <!-- right  menues -->
+          <div class="right">
+                <div class="one"><table id="table"></table></div>
+                <div class="two"><table id="table1"></table></div>
+                <div class="three"><table id="table_delet"></table></div>
+                <div class="four"><table id="table-user"></table></div>
+          </div>
+  </div>
+
+
+<!-- 删除弹出框 start-->
+<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" id="myDelete">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+        <div class="modal-header btn-danger">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                    aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="delete_title">删除商品</h4>
+        </div>
+        <div class="modal-body">
+            <div class="alert alert-danger" role="alert" style="text-align: center">确认删除物品?</div>
+            <div class="my_footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                <button type="button" class="btn btn-danger" id="sure">确认</button>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+<!-- 删除弹出框 end-->
+
+
+  <!-- 添加商品/修改弹出框start-->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title g-info" id="exampleModalLabel"></h4>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="input-group input-group-lg ">
+                        <span class="input-group-addon" id="sizing-addon1">商品类别</span>
+                        <select class="form-control" aria-describedby="sizing-addon1" id="class">
+                            <option>电脑用品</option>
+                            <option>办公用品</option>
+                            <option>日常用品</option>
+                            <option>数码产品</option>
+                            <option>其他</option>
+                        </select>
+                    </div>
+                    <div class="input-group input-group-lg">
+                        <span class="input-group-addon" id="sizing-addon3">商品货名</span>
+                        <input type="text" class="form-control" placeholder="Name" aria-describedby="sizing-addon1"
+                               id="name" required data-toggle="popover" data-trigger="focus" data-placement="right"  data-content="请填写商品名">
+                    </div>
+                    <div class="input-group input-group-lg">
+                        <span class="input-group-addon" id="sizing-addon4">商品数量</span>
+                        <input type="number" class="form-control" placeholder="Number" aria-describedby="sizing-addon1"
+                               id="num" required data-toggle="popover" data-trigger="focus" data-placement="right"  data-content="请填写数字">
+                    </div>
+                     <div class="input-group input-group-lg">
+                        <span class="input-group-addon" id="sizing-addon4">操作人员</span>
+                        <input type="text" class="form-control" placeholder="People" aria-describedby="sizing-addon1"
+                               id="people" required data-toggle="popover" data-trigger="focus" data-placement="right"  data-content="请填写操作人">
+                    </div>
+
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-danger" id="send">Send message</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 添加商品/修改弹出框end-->
+
+
+<!-- 用户管理查看密码弹出框 -->
+<div class="modal fade bs-example-modal-sm" id="pwdAdmin" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+             <div class="modal-header btn-danger">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="delete">jkhi</h4>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+                        <span class="info"></span>
+                    </div>
+                </form>
+                <div class="my_footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                    <button type="button" class="btn btn-danger" id="pwdsure">确认</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-table.min.js"></script>
+    <script src="js/bootstrap-table-zh-CN.min.js"></script>
+    <script src="js/template.js"></script>
+    <script src="js/my-table.js"></script>
+    <script src="js/bootstrap-table-export.js"></script>
+    <script src="js/tableExport.js"></script>
+    <script type="text/html" id="infoLists">
+        {{each result as value}}
+            <li>
+                <a href="#"> <span class="label label-info">{{value.name}}</span>  剩余 ：<span class="label label-danger"> {{value.num}} </span></a>
+            </li>
+
+        {{/each}}
+        <li class="divider"></li>
+        <li>
+            <a href="#">View All</a>
+        </li>
+    </script>
+</html>

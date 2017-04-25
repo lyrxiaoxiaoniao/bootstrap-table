@@ -1,0 +1,158 @@
+a{
+    text-decoration:none;
+        color: #000;
+}
+.navbar{
+    background-color: whitesmoke;
+    border-bottom: 1px solid #bbb;
+}
+.navbar-header {
+    float: left;
+}
+
+.navbar-brand{
+    // background: url(../images/logo.gif) no-repeat center/cover;
+    padding:5px 0 0;
+}
+.container{
+    min-width: 100% !important;
+}
+.nav-style{
+    float: right;
+}
+.nav>li {
+        float: left;
+}
+.content {
+    // display: flex;
+}
+@media screen and (min-width:771px){
+    .content .left{
+         overflow:hidden;
+         float: left;
+         width: 150px;
+         padding-top: 50px;
+         padding-bottom: 50px;
+         max-height:100%;
+         min-height:100%;
+         background-color: whitesmoke;
+         border-right: 1px solid #bbb;
+    }
+
+}
+@media screen and (min-width:375px) and (max-width:770px){
+    .content .left{
+         overflow:hidden;
+         float: left;
+         width: 45px;
+         padding-top: 50px;
+         padding-bottom: 50px;
+         max-height:100%;
+         min-height:100%;
+         background-color: whitesmoke;
+         border-right: 1px solid #bbb;
+    }
+    .content .left span{
+        display:none;
+    }
+}
+.content .left li{
+
+        width:100%;
+}
+.content .left li.active{
+    background-color: #d4d4d4;
+}
+
+.content .left #munes{
+    height: 50px;
+    padding: 20px 15px;
+    position: relative;
+    color: #black;
+}
+.content .left #munes>i{
+    position:absolute;
+    right: 22px;
+    top: 22px;
+}
+.content .left li a{
+
+   overflow: hidden;
+    text-decoration: none;
+    padding-top: 15px;
+    display:inline-block;
+    width:100%;
+    padding-bottom: 15px;
+    color:black;
+}
+.content .left li ul{
+    padding:0;
+}
+.content .left li ul>li{
+
+}
+.content .left li ul>li a{
+    padding-left: 30px;
+}
+.nav>li>a:focus, .nav>li>a:hover {
+    text-decoration: none;
+    background-color: #d4d4d4;
+}
+#demo li a:hover {
+     text-decoration: none;
+    background-color: #d4d4d4;
+}
+
+.content .left .side-nav i.glyphicon{
+    margin-right: 8px;
+    margin-left: 1px;
+}
+.content .right{
+    overflow:auto;
+    height:100%;
+    padding-top:50px;
+    padding:50px 15px 0 15px;
+    // width: 100%;
+     // background: deeppink;
+}
+
+.tabClass{
+    transform:all .5s;
+    position:absolute;
+    top:0;
+}
+.ck_search{
+    display:flex;
+}
+.ck_search .input-group:nth-child(1){
+    width: 40%;
+}
+.ck_search .input-group:nth-child(2){
+    width: 40%;
+}
+.ck_search .input-group:nth-child(3){
+    width: 20%;
+}
+.ck_search .input-group:nth-child(3) button{
+    padding:9px 30px;
+}
+
+
+#myDelete .my_footer , #pwdAdmin .my_footer{
+    text-align:center;
+}
+
+.my_footer button:nth-child(1){
+    margin-right: 20px;
+}
+.my_footer button:nth-child(2){
+    margin-left: 20px;
+}
+
+.btn-group>.btn{
+        height: 34px
+}
+.fixed-table-body{
+    height: 80%;
+}
+
